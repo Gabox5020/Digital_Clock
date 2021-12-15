@@ -9,7 +9,7 @@
         body {
             background-color: black;
         }
-        
+
 .reloj {
   font-size: 80px;
   color: #fff;
@@ -38,7 +38,17 @@ font-size: 3em;
 
         <div class="reloj glow">10:15:20</div>
 
+        <script>
 
-    
+            setInterval(()=> {
+                var reloj = document.getElementsByClassName("reloj")[0];
+                var tiempoActual = new Date();
+                alert(tiempoActual)
+                reloj.innerHTML = "adasdas";
+            }, 1000)
+
+
+        </script>
+
     </body>
 </html>
